@@ -24,3 +24,9 @@ Can conditional flow matching with a simple straight-line schedule learn mode-pr
 1) Sample quality: sliced-W2 (approx Wasserstein)
 2) Mode coverage: recovered modes / assignment accuracy
 3) Training stability: loss curve + diagnostics
+
+## Progress
+- [x] Step 0: scope fixed + repo scaffold + 3 configs
+- [ ] Step 1: implement MoG sampler + FM baseline training
+- [ ] Step 2: run 3 settings + generate 6–10 key figures
+- [ ] Step 3: write 2–4 page summary PDF + (optional) 5-slide deck

@@ -1,0 +1,22 @@
+name: bimodal_to_bimodal
+seed: 0
+data:
+  source:
+    type: mog
+    weights: [0.5, 0.5]
+    means: [[-2.0, -1.0], [-2.0, 1.0]]
+    covs:
+      - [[0.25, 0.0], [0.0, 0.25]]
+      - [[0.25, 0.0], [0.0, 0.25]]
+  target:
+    type: mog
+    weights: [0.5, 0.5]
+    means: [[2.0, -1.0], [2.0, 1.0]]
+    covs:
+      - [[0.25, 0.0], [0.0, 0.25]]
+      - [[0.25, 0.0], [0.0, 0.25]]
+train:
+  t0: 0.0
+  t1: 1.0
+  schedule: straight
+metrics: [sliced_w2, mode_coverage, stability]

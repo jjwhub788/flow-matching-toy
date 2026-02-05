@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.venv/
+venv/
+.env
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Results (keep figures folder)
+results/**/*
+!results/figures/
+!results/figures/**/*

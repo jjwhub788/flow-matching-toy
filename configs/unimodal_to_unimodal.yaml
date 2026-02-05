@@ -1,0 +1,16 @@
+name: unimodal_to_unimodal
+seed: 0
+data:
+  source:
+    type: gaussian
+    mean: [-2.0, 0.0]
+    cov: [[0.3, 0.0], [0.0, 0.3]]
+  target:
+    type: gaussian
+    mean: [2.0, 0.0]
+    cov: [[0.3, 0.0], [0.0, 0.3]]
+train:
+  t0: 0.0
+  t1: 1.0
+  schedule: straight
+metrics: [sliced_w2, mode_coverage, stability]
